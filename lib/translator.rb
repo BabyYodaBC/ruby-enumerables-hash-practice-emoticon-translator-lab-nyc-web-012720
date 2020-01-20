@@ -21,8 +21,8 @@ end
 
 def get_english_meaning(file, emoticon)
   emoticons = load_library(file)
-  if emoticons[:get_emoticon].keys.include?(emoticon)
-    return emoticons[:get_emoticon][emoticon]
+  if emoticons[:get_meaning].keys.include?(emoticon)
+    return emoticons[:get_meaning][emoticon]
   else
     return "Sorry, that emoticon was not found"
   end
