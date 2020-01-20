@@ -7,13 +7,16 @@ def load_library(file)
     hash[:get_meaning][moti[1]] = meaning
     hash[:get_emoticon][moti[0]] = moti[1]
   end
-  # print hash
-  #lib = {get_meaning: emoticons.keys, get_emoticon: emoticons.values}
   return hash
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, emoticon)
+  emoticons = load_library(file)
+  if emoticons[:get_emoticon].keys.include?(emoticon)
+    return emoticons[:get_emoticon][emoticon]
+  else
+    print "Not a known emoticon"
+  end
 end
 
 def get_english_meaning
