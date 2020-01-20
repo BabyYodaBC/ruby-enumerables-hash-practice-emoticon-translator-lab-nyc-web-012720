@@ -4,8 +4,9 @@ def load_library(file)
   emoticons = YAML.load_file(file)
   hash = {"get_emoticon": {}}
   emoticons.each do |meaning, moti|
-    hash[get_emoticon] = {english_emoticon: moti}
+    hash[get_emoticon] = {english_emoticon: moti[0], japanese_emoticon: moti[1]}
   end
+  print hash
   #lib = {get_meaning: emoticons.keys, get_emoticon: emoticons.values}
   
 end
