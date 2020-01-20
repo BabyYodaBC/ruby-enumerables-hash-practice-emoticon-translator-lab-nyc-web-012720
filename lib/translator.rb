@@ -7,9 +7,9 @@ def load_library(file)
     # hash[get_emoticon] = {english_emoticon: moti[0], japanese_emoticon: moti[1]}
     print meaning, moti
   end
-  print hash
+  # print hash
   #lib = {get_meaning: emoticons.keys, get_emoticon: emoticons.values}
-  
+  return {get_meaning: {}, get_emoticon: {}} 
 end
 
 def get_japanese_emoticon
