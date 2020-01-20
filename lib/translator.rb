@@ -15,7 +15,7 @@ def get_japanese_emoticon(file, emoticon)
   if emoticons[:get_emoticon].keys.include?(emoticon)
     return emoticons[:get_emoticon][emoticon]
   else
-    print "Not a known emoticon"
+    print "Sorry, that emoticon was not found"
   end
 end
 
