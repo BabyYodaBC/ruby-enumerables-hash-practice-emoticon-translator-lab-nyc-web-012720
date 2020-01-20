@@ -5,10 +5,9 @@ def load_library(file)
   hash = {"get_emoticon": {}, "get_meaning": {}}
   emoticons.each do |meaning, moti|
     hash[get_meaning][moti[1]] = meaning
-    hash[get_meaning][moti[0]] = meaning
-    hash[get_emoticon][moti[0]] = 
+    hash[get_emoticon][moti[0]] = meaning
   end
-  # print hash
+  print hash
   #lib = {get_meaning: emoticons.keys, get_emoticon: emoticons.values}
   return hash
 end
